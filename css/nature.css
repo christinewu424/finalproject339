@@ -1,0 +1,61 @@
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+    padding: 20px;
+}
+
+.bolded{
+    font-weight: bold;
+}
+
+li {
+    list-style-type: none;
+    padding: 20px;
+}
+
+a.skip{
+    position: absolute;
+    top: -40px;
+}
+
+a.skip:focus {
+    top: 20px;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: lavender;  
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.column img {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (min-width:768px) {
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .column {
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
+}
